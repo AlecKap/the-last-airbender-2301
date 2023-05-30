@@ -1,6 +1,6 @@
 class TlabService
   def members_by_nation(query)
-    get_url("/api/v1/characters?affiliation=#{query}")
+    get_url("/api/v1/characters?affiliation=#{query}&perPage=200")
   end
 
   private
