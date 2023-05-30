@@ -6,7 +6,7 @@ RSpec.describe TlabService do
       it 'returns data of members affiliated with a particular nation' do
         query = "Fire+Nation"
         members = TlabService.new.members_by_nation(query)
-        member = members.first
+        member = members.second
 
         expect(members).to be_an(Array)
         expect(member).to be_an(Hash)
